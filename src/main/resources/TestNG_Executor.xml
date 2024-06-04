@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="LambaTestSuite" parallel="tests">
+
+	<test name="ChromeTest">
+		<parameter name="browser" value="Chrome" />
+		<parameter name="version" value="124.0" />
+		<parameter name="platform" value="Windows 10" />
+		<classes>
+			<class name="com.main.Main" />
+		</classes>
+	</test>
+
+	<test name="MACTEST">
+		<parameter name="browser" value="Safari" />
+		<parameter name="version" value="17.0" />
+		<parameter name="platform" value="macOS Sonoma" />
+		<classes>
+			<class name="com.main.Main" />
+		</classes>
+	</test>
+
+</suite>
